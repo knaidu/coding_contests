@@ -1,3 +1,5 @@
+// UVa 10258 - Contest Scoreboard
+
 #include <iostream>
 #include <map>
 #include <algorithm>
