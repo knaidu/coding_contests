@@ -76,5 +76,5 @@ int main(){
 		}
 	}
 	
-	//sort(contestantMap.begin(), contestantMap.end());
+	sort(contestantMap.begin(), contestantMap.end());
 }
