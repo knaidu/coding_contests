@@ -1,3 +1,0 @@
-// Intersect 2 sorted arrays
-
-#include <iostream>
