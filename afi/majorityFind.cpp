@@ -24,7 +24,7 @@ int majorityFind(int a[], int n) {
 			count = 1;
 		}
 	}
-	return majorityCandidate;
+	return majorityCandidate8;
 }
 
 int main() {
