@@ -1,4 +1,4 @@
-// Given a linked list, delete a node given the pointer to that node.
+// Given a singly linked list, delete a node given the pointer to that node.
 
 // Returns 0/1 - SUCCESS/FAILURE
 int deleteNode(Node head, Node toDelete) {
