@@ -1,5 +1,7 @@
 // Given a singly linked list, delete a node given the pointer to that node.
 
+#include <iostream>
+
 // Returns 0/1 - SUCCESS/FAILURE
 int deleteNode(Node head, Node toDelete) {
 	if(toDelete == NULL) return FAILURE;
