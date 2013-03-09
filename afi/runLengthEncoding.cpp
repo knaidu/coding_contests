@@ -31,10 +31,29 @@ int runLengthEncoding(string& input, string& output) {
 	return SUCCESS;
 }
 
+int runLengthDecoding(string& input, string& output) {
+	int n = input.size();
+	if(n <= 0) return FAILURE;
+	ostringstream ss;
+
+	for(int i=0; i<n; i+=2) {
+		char c = input[i];
+		char x  = input[i+1];
+		int num = atoi(&x);
+		for(int j=0; j<num; j++) {
+			ss << c;
+		}
+	}
+	output = ss.str();
+	return SUCCESS;
+}
+
 int main() {
-	string input, output;
+	string input, encoded, decoded;
 	cout << "Enter input string" << endl;
 	cin >> input;
-	if(runLengthEncoding(input, output) == SUCCESS)
-		cout << output << endl;
+	if(runLengthEncoding(input, encoded) == SUCCESS)
+		cout << "Encoded: " << encoded << endl;
+	if(runLengthDecoding(encoded, decoded) == SUCCESS) 
+		cout << "Decoded: " << decoded << endl;
 }
