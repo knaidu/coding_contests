@@ -40,6 +40,7 @@ int runLengthDecoding(string& input, string& output) {
 		char c = input[i];
 		char x  = input[i+1];
 		int num = atoi(&x);
+		cout << "c= " << c << ", num = " << num << endl;
 		for(int j=0; j<num; j++) {
 			ss << c;
 		}
