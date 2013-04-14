@@ -1,5 +1,7 @@
 /*
- * Given an array containing only positive values and 0, given starting index, play this game where if * you hit a zero you win, else you can jump left or right value positions. If you never hit a zero but * have explored all possibilities then you lose too.
+ * Given an array containing only positive values and 0, given starting index, play this game where if 
+ * you hit a zero you win, else you can jump left or right value positions. If you never hit a zero but 
+ * have explored all possibilities then you lose too.
 */
 
 bool playGame(vector<int> a, vector<int>& visited, int &index) {
