@@ -25,13 +25,13 @@ string printCountry(vector<string, int> population) {
 	while(low < high) {
 		mid = (low + high) / 2;
 		if(r < numberLine[mid] && r > numberLine[mid -1]) {
-			return population[mid-1];
+			return population[mid-1]->first;
 		}
 		else if(r > numberLine[mid] && r < numberLine[mid] + 1) {
-			return population[mid+1];
+			return population[mid+1]->first;
 		}
 		else if(r == numberLine[mid]) {
-			return population[mid];
+			return population[mid]->first;
 		}
 		else {
 			if(r < population[mid]) high = mid - 1;
