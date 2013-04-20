@@ -20,7 +20,7 @@ int sort(Node& head) {
 	
 	head = newHead;	
 	return SUCCESS;
-}
+}  
 
 Node& removeHead(Node& head) {
 	Node& temp = head;
